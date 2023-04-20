@@ -29,20 +29,27 @@ function App() {
           headerTitle: () => <Header name="คำนวณน้ำยาง" />,
           headerStyle:{
             height: 130,
-            //borderBottomLeftRadius: 30,
-            //borderBottomRightRadius: 30,
-            //backgroundColor: '#7FB3D5',
+            borderBottomLeftRadius: 30,
+            borderBottomRightRadius: 30,
+            backgroundColor: '#7FB3D5',
             //shadowColor: '#000',
             //elevation: 25
           },
-          headerBackground: () => (
-            <Image
-              style={StyleSheet.absoluteFill}
-              source={require('./src/img/sun-tornado1.png')}
-            />
-          ),
+          // headerBackground: () => (
+          //   <Image
+          //     style={StyleSheet.absoluteFill}
+          //     source={require('./src/img/sun-tornado1.png')}
+          //   />
+          // ),
         }}
       >
+      </Stack.Screen>
+      
+      <Stack.Screen
+        name="Next"
+        component={Nextscreen}
+        >
+
       </Stack.Screen>
     </Stack.Navigator>
   );
