@@ -25,30 +25,37 @@ function App() {
         //    />
         //  }}
 
-        options={{
-          headerTitle: () => <Header name="คำนวณน้ำยาง" />,
-          headerStyle:{
-            height: 130,
-            borderBottomLeftRadius: 30,
-            borderBottomRightRadius: 30,
-            backgroundColor: '#7FB3D5',
-            //shadowColor: '#000',
-            //elevation: 25
-          },
-          // headerBackground: () => (
-          //   <Image
-          //     style={StyleSheet.absoluteFill}
-          //     source={require('./src/img/sun-tornado1.png')}
-          //   />
-          // ),
-        }}
+        // options={{
+        //   headerTitle: () => <Header name="คำนวณน้ำยาง" />,
+        //   headerStyle: {
+        //     height: 180,
+        //     borderBottomLeftRadius: 30,
+        //     borderBottomRightRadius: 30,
+        //     backgroundColor: '#7FB3D5',
+        //     //shadowColor: '#000',
+        //     //elevation: 25,
+        //   },
+        //   // headerBackground: () => (
+        //   //   <Image
+        //   //     style={StyleSheet.absoluteFill}
+        //   //     source={require('./src/img/sun-tornado1.png')}
+        //   //   />
+        //   // ),
+        //   // headerBackground: () => (
+        //   //   <Image
+        //   //     style={StyleSheet.absoluteFill}
+        //   //     source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg' }}
+        //   //   />
+        //   // ),
+         
+        // }}
       >
       </Stack.Screen>
-      
+
       <Stack.Screen
         name="Next"
         component={Nextscreen}
-        >
+      >
 
       </Stack.Screen>
     </Stack.Navigator>
@@ -59,7 +66,7 @@ function App() {
 export default () => {
   return (
     <NavigationContainer>
-      <App/>
+      <App />
     </NavigationContainer>
   )
 }
