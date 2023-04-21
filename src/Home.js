@@ -7,11 +7,15 @@ const Home = () => {
     const [perRubber, serPerRubber] = useState('');
     const [priceR, serPriceR] = useState('');
     const result = calculatePercentage(userName, perRubber);
+    
+    
     const modper = calculateModper(result);
     const sumprice = calculateSumprice(result, priceR);
 
     let number = 4.9677;
     let decimal = Math.trunc(number);
+    let toFixed1 = (number,2);
+    const toFixed =  `${number}`.match(new RegExp(`^-?\\d+(?:\.\\d{0,${1}})?`))[0];
 
     return (
         <SafeAreaView style={{ flex: 1 }}>
@@ -35,6 +39,7 @@ const Home = () => {
                 <Text>{`The result is: ${result}%`}</Text>
                 <Text>{`น้ำยางแห้งทั้งหมด: ${modper}%`}</Text>
                 <Text>{`ทดสอบ: ${decimal}%`}</Text>
+                <Text>{`ทดสอบ1: ${toFixed}%`}</Text>
 
 
                 <TextInput
